@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
     <audio id="lagu" loop>
   <source src="hbdcatsong.mp3" type="audio/mpeg">
 </audio>
-  
 
 
   <h1>
@@ -34,7 +34,8 @@
   </div>
 
   <button id="ucapan">Klik untuk kejutan kecil 🎁</button>
-  <button onclick="matikan()"></button>
+  <button onclick="matikan()" id="mati" style="display: none;">Pause Musik 🔇</button>
+  <button onclick="hidupkan()" id="hidup" style="display: none;">Putar Musik 🎵</button>
 
     <div class="masukan">
       <div class="foto">
