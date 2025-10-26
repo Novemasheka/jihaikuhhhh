@@ -11,7 +11,8 @@ ucapan.addEventListener("click", function Headers() {
     
     alert('🎉 Selamat ulang tahun Jihaikuhh! \n Meskipun Hadiah yang ku berikan tidak seberapa :), \n Bisa jadi ini adalah hadiah terakhir dari aku \nSemoga suka yah ^^ ❤️❤️❤️\n\n Tekan "OK" untuk mengirim pesan buat Novell :D')
     lagu.play();
-    musik[0].style.display = "block"
+    musik[0].style.display = "block";
+    musik[1].style.display = "none";
     notif[0].style.display = "block";
     notif[0].style.animation = "fadeIn 1s ease-in-out";
     confetti({
