@@ -29,7 +29,7 @@ function kirim() {
   const nomor = "6289514433486";
   
   // Buat link WhatsApp dinamis
-  link.href = `https://wa.me/${nomor}?text=Pesan%20untuk%20Novell%20:%20${teksEncoded}`;
+  link.href = `https://wa.me/${nomor}?text=Dari%20Jihai:%20"${teksEncoded}"`;
   if(masukan == "") {
     link.href = "#"
     alert("Ketik pesannya dulu ya sayang ^^");
