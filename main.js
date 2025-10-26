@@ -2,23 +2,31 @@ let pesan = document.getElementById("pesan");
 let notif = document.getElementsByClassName("masukan");
 let btn = document.getElementById("submit");
 let ucapan = document.getElementById("ucapan");
+let send = document.getElementById("kirimkan")
+let lagu = document.getElementById("lagu");
 window.onscroll = function() {Headers()}
 
 ucapan.addEventListener("click", function Headers() {
     
     alert('🎉 Selamat ulang tahun Jihaikuhh! \n Meskipun Hadiah yang ku berikan tidak seberapa :), \n Bisa jadi ini adalah hadiah terakhir dari aku \nSemoga suka yah ^^ ❤️❤️❤️\n\n Tekan "OK" untuk mengirim pesan buat Novell :D')
+    lagu.play();
     notif[0].style.display = "block";
     notif[0].style.animation = "fadeIn 1s ease-in-out";
     document.documentElement.scrollTop = 1000
     document.body.scrollTop = 1000
 })
 
+function matikan() {
+  lagu.pause();
+  lagu.currentTime = 0;
+}
+
     
     
 
 
-function kirim() {
-    // Ambil elemen input pesan dan link
+send.addEventListener("click", function Headers(){
+   // Ambil elemen input pesan dan link
   const masukan = document.getElementById("pesan").value;
   const link = document.getElementById("kirimkan");
 
@@ -34,8 +42,12 @@ function kirim() {
     link.href = "#"
     alert("Ketik pesannya dulu ya sayang ^^");
   }
+    document.documentElement.scrollTop = 1000
+    document.body.scrollTop = 1000
   
-}
+}) 
+   
+
 
     
 
