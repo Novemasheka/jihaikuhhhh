@@ -59,6 +59,7 @@ body {
     left: -20px;
   }
   .message {
+      
     display: none;
     background: rgba(255,255,255,0.15);
     padding: 20px;
