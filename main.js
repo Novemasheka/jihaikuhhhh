@@ -5,6 +5,7 @@ let ucapan = document.getElementById("ucapan");
 let send = document.getElementById("kirimkan")
 let lagu = document.getElementById("lagu");
 let musik= [document.getElementById("mati"),document.getElementById("hidup")]
+let message = document.getElementByClassName("message")
 window.onscroll = function() {Headers()}
 
 ucapan.addEventListener("click", function Headers() {
@@ -20,6 +21,7 @@ ucapan.addEventListener("click", function Headers() {
           spread: 90,
           origin: { y: 0.6 }
         });
+    message[0].style.display = "block";
     document.documentElement.scrollTop = 1000
     document.body.scrollTop = 1000
 })
